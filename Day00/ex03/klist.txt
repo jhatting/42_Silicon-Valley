@@ -1,0 +1,7 @@
+Credentials cache: API:45369
+        Principal: shat@42.US.ORG
+
+  Issued                Expires               Principal
+Sep 17 12:04:04 2018  Sep 17 22:04:02 2018  krbtgt/42.US.ORG@42.US.ORG
+Sep 17 12:04:08 2018  Sep 17 22:04:02 2018  ldap/ldap-master.42.us.org@42.US.ORG
+Sep 17 12:25:09 2018  Sep 17 22:04:02 2018  host/vgs-fn1.42.us.org@42.US.ORG
