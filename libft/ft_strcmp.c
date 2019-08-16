@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/16 10:06:04 by shat              #+#    #+#             */
+/*   Updated: 2019/08/16 10:13:31 by shat             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
@@ -9,31 +19,5 @@ int	ft_strcmp(const char *s1, const char *s2)
 		s1++;
 		s2++;
 	}
-	return ((unsigned char)*s1 - (unsigned char) *s2);
-}
-int main(int argc, const char * argv[])
-{
-    /* Create a place to store our results */
-    int result;
-
-    /* Create two arrays to hold our data */
-    char example1[50];
-    char example2[50];
-
-    /* Copy two strings into our data arrays */
-    strcpy(example1, "C programming at TechOnTheNet.com");
-    strcpy(example2, "C programming is fun");
-
-    /* Compare the two strings provided */
-    result = strcmp(example1, example2);
-
-    /* If the two strings are the same say so */
-    if (result == 0) printf("Strings are the same\n");
-
-    /* If the first string is less than the second say so
-     (This is because the 'a' in the word 'at' is less than
-     the 'i' in the word 'is' */
-    if (result < 0) printf("Second string is less than the first\n");
-
-    return 0;
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
