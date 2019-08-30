@@ -1,23 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/20 14:12:48 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 13:54:14 by shat             ###   ########.fr       */
+/*   Created: 2019/08/29 12:21:56 by shat              #+#    #+#             */
+/*   Updated: 2019/08/29 12:23:49 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*newstr;
+	char	*str;
+	int		i;
 
-	newstr = ((char *)malloc(sizeof(char) * (ft_strlen(s1) + 1)));
-	if (newstr)
-		return (ft_strcpy(newstr, s1));
-	return (NULL);
+	if ((s1 != NULL && s2 != NULL) && \
+	(str = (char *)malloc(sizeof(char) * (1 + ft_strlen(s1) + ft_strlen(s2)))))
+	{
+		i = 0;
+		while (*s1)
+		{
+			str[i] = *s1;
+			i++;
+			s1++;
+		}
+		while (*s2)
+		{
+			str[i] = *s2;
+			i++;
+			s2++;
+		}
+		str[i] = '\0';
+		return (str);
+	}
+	else
+		return (NULL);
 }

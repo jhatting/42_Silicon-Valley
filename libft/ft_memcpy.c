@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/20 14:12:48 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 13:54:14 by shat             ###   ########.fr       */
+/*   Created: 2019/08/29 13:27:09 by shat              #+#    #+#             */
+/*   Updated: 2019/08/29 13:53:01 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	*ft_memcpy(void *dst, const void *src, size_t len)
 {
-	char	*newstr;
+	size_t			i;
+	unsigned char	*dest;
+	unsigned char	*sorc;
 
-	newstr = ((char *)malloc(sizeof(char) * (ft_strlen(s1) + 1)));
-	if (newstr)
-		return (ft_strcpy(newstr, s1));
-	return (NULL);
+	i = 0;
+	dest = (unsigned char *)dst;
+	sorc = (unsigned char *)src;
+	while (i < len)
+	{
+		dest[i] = sorc[i];
+		i++;
+	}
+	return (dst);
 }
