@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccp.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/29 14:07:27 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 14:07:42 by shat             ###   ########.fr       */
+/*   Created: 2019/08/30 00:02:33 by shat              #+#    #+#             */
+/*   Updated: 2019/08/30 00:03:05 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t len)
+void	*ft_memalloc(size_t size)
 {
+	unsigned char	*ptr;
 	size_t			i;
-	unsigned char	*dest;
-	unsigned char	*sorc;
 
 	i = 0;
-	dest = (unsigned char *)dst;
-	sorc = (unsigned char *)src;
-	while (i < len)
+	ptr = (unsigned char *)malloc(size);
+	if (!ptr)
+		return (NULL);
+	while (i < size)
 	{
-		dest[i] = sorc[i];
-		if (sorc[i] == (unsigned char)c)
-			return (dst + i + 1);
+		ptr[i] = 0;
 		i++;
 	}
-	return (NULL);
+	return ((void *)ptr);
 }
