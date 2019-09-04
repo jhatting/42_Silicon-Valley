@@ -6,7 +6,7 @@
 #    By: shat <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/02 20:01:21 by shat              #+#    #+#              #
-#    Updated: 2019/09/03 17:31:19 by shat             ###   ########.fr        #
+#    Updated: 2019/09/03 18:11:03 by shat             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,12 +39,13 @@ SRCS = ft_atoi\
 	   ft_putchar\
 	   ft_putendl_fd\
 	   ft_putendl\
+	   ft_putnbr\
 	   ft_putnbr_fd\
 	   ft_putstr_fd\
 	   ft_putstr\
 	   ft_strcat\
 	   ft_strchr\
-	   ft_strcl\
+	   ft_strclr\
 	   ft_strcmp\
 	   ft_strcpy\
 	   ft_strdel\
@@ -62,6 +63,7 @@ SRCS = ft_atoi\
 	   ft_strncpy\
 	   ft_strnequ\
 	   ft_strnew\
+	   ft_putnbr\
 	   ft_strnstr\
 	   ft_strrchr\
 	   ft_strsplit\
