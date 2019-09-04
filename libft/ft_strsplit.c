@@ -6,37 +6,37 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 13:14:33 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 20:54:28 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 13:21:57 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_strsplit(const char *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
-	char	**ret;
+	size_t	start;
+	size_t	end;
 	size_t	i;
-	size_t	j;
-	size_t	len;
+	size_t	nb_words;
+	char	**tab;
 
-	if (!s || !c)
-		return (0);
-	ret = ft_memalloc(ft_strlen(s) + 1);
+	nb_words = 0;
+	tab = NULL;
 	i = 0;
-	j = 0;
-	while (s[i])
+	if (s && ((tab = (char **)malloc(sizeof(*tab) * (ft_strlen(s) / 2 + 2)))))
 	{
-		if (s[i] == c)
-			i++;
-		else
+		while (i < ft_strlen(s))
 		{
-			len = 0;
-			while (s[i + len] && (s[i + len] != c))
-				len++;
-			ret[j++] = ft_strsub(s, i, len);
-			i = i + len;
+			while (s[i] == c && s[i])
+				i++;
+			start = i;
+			while (s[i] != c && s[i])
+				i++;
+			end = i;
+			if ((end - start) > 0)
+				tab[nb_words++] = ft_strsub(s, start, end - start);
 		}
+		tab[nb_words] = 0;
 	}
-	ret[j] = 0;
-	return (ret);
+	return (tab);
 }

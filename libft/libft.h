@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 17:07:42 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 21:32:25 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 14:55:23 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,9 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t len);
 void				*ft_memchr(const void *b, int c, size_t len);
-void				*ft_memcpy(void *dst, const void *src, size_t len);
+void				*ft_memcpy(void *dst, void const *src, size_t n);
 void				ft_memdel(void **ap);
-void				*ft_memmove(void *s1, const void *s2, size_t n);
+void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);

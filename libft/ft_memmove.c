@@ -6,28 +6,33 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 14:46:50 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 15:05:09 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 16:27:20 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *s1, const void *s2, size_t n)
-{
-	unsigned char		*dest;
-	const unsigned char	*src;
+/*
+** Copies len bytes from string src to string dst.
+** The two strings may overlap; the copy is always done in a non-destructive
+** manner.
+*/
 
-	dest = (unsigned char *)s1;
-	src = (unsigned char *)s2;
-	if (src > dest)
-		ft_memcpy(s1, s2, n);
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+	unsigned int			i;
+	
+	if (dst == src)
+		return (dst);
+	i = 0;
+	if (((unsigned char *)src) < ((unsigned char *)dst))
+		while (len-- > 0)
+			((unsigned char *)dst)[len] = ((unsigned char *)src)[len];
 	else
-	{
-		while (n > 0)
+		while (i < len)
 		{
-			dest[n - 1] = src[n - 1];
-			n--;
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+			i += 1;
 		}
-	}
-	return (s1);
+	return (((unsigned char *)dst));
 }
