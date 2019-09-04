@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 17:07:42 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 19:16:09 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/03 20:37:48 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,10 @@ char	**ft_strsplit(char const *s, char c);
 char	*ft_strstr(const char *s1, const char *s2);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
+char	*ft_word(const char *str, char c, int *i);
 
 int		ft_atoi(const char *s);
+int		ft_count_words(const char *str, char c);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -58,7 +60,7 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(cont char *s);
+size_t	ft_strlen(const char *s);
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list	*ft_lstnew(void const *content, size_t content_size);

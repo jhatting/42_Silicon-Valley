@@ -6,7 +6,7 @@
 #    By: shat <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/02 20:01:21 by shat              #+#    #+#              #
-#    Updated: 2019/09/03 19:15:37 by shat             ###   ########.fr        #
+#    Updated: 2019/09/03 20:36:56 by shat             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 
 SRC = ft_atoi.c\
 	  ft_bzero.c\
+	  ft_count_words.c\
 	  ft_isalnum.c\
 	  ft_isalpha.c\
 	  ft_isascii.c\
@@ -26,8 +27,7 @@ SRC = ft_atoi.c\
 	  ft_lstdelone.c\
 	  ft_lstmap.c\
 	  ft_lstnew.c\
-	  ft_lstriter.c\
-	  ft_lstrnew.c\
+	  ft_lstiter.c\
 	  ft_memalloc.c\
 	  ft_memccpy.c\
 	  ft_memchr.c\
@@ -72,11 +72,12 @@ SRC = ft_atoi.c\
 	  ft_strsub.c\
 	  ft_strtrim.c\
 	  ft_tolower.c\
-	  ft_toupper.c
+	  ft_toupper.c\
+	  ft_word
 
-HEADER = includes\
+HEADER = libft.h
 CC = gcc
-CFLAGS = -Wall -Wextra - Werror -g
+CFLAGS = -Wall -Wextra - Werror
 
 all: $(NAME)
 
@@ -85,7 +86,7 @@ $(NAME): $(SRC)
 	ar -rc $@ *.o
 
 clean:
-	bin/rm -f *.o
+	/bin/rm -f *.o
 
 fclean: clean
 	/bin/rm -f $(NAME)

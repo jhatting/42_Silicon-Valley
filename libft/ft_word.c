@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_word.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/29 13:14:33 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 20:38:27 by shat             ###   ########.fr       */
+/*   Created: 2019/09/03 20:34:33 by shat              #+#    #+#             */
+/*   Updated: 2019/09/03 20:35:45 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			**ft_strsplit(const char *str, char c)
+char	*ft_word(const char *str, char c, int *i)
 {
-	int		i;
-	int		j;
-	int		wrd;
-	char	**s;
+	char	*s;
+	int		k;
 
-	i = 0;
-	j = 0;
-	wrd = ft_count_words(str, c);
-	if (!(s = (char **)malloc(sizeof(s) * (ft_count_words(str, c) + 2))))
+	if (!(s = (char *)malloc(sizeof(s) * (ft_strlen(str)))))
 		return (NULL);
-	while (str[i] == c && str[i])
-		i++;
-	while (j < wrd && str[i])
+	k = 0;
+	while (str[*i] != c && str[*i])
 	{
-		s[j] = ft_word(str, c, &i);
-		j++;
+		s[k] = str[*i];
+		k++;
+		*i += 1;
 	}
-	s[j] = NULL;
+	s[k] = '\0';
+	while (str[*i] == c && str[*i])
+		*i += 1;
 	return (s);
 }
