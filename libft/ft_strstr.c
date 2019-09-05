@@ -6,11 +6,12 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 14:30:32 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 13:52:37 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:15:21 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 /*
 ** The strstr() function locates the first occurrence of
 ** the null-terminated string s2 in the null-terminated string s1.
@@ -19,7 +20,7 @@
 ** of the first occurrence of s2 is returned.
 */
 
-char *ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	int i;
 	int pos;

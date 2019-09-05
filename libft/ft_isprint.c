@@ -6,16 +6,16 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/22 22:16:27 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 18:17:00 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:21:39 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**The isprint() function checks whether a 
+**The isprint() function checks whether a
 **character is a printable character  or not.
-**Those characters that occupies printing space 
+**Those characters that occupies printing space
 **are known as printable characters.
 */
 

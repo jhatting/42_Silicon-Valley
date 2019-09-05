@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/22 15:09:53 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 17:55:20 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:03:41 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 **Check whether the given character is alphanumeric
-**(consisting of or using both letters test and numerals test) 
+**(consisting of or using both letters test and numerals test)
 **or not. Alphanumeric character test.
 */
 

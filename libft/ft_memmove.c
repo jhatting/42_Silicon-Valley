@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 14:46:50 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 16:27:20 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:14:34 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned int			i;
-	
+	unsigned int i;
+
 	if (dst == src)
 		return (dst);
 	i = 0;

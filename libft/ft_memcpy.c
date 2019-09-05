@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 13:27:09 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 16:27:16 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:18:28 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memcpy(void *dst, void const *src, size_t n)
 	int			index;
 
 	if (dst == src)
-		return (dst);	
+		return (dst);
 	index = 0;
 	tmp_d = (char *)dst;
 	tmp_s = (char const *)src;

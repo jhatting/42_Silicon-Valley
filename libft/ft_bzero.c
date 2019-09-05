@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 23:57:35 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 17:12:00 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/05 13:03:18 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 **Write zeros to a byte string, using memset which is used to
-**fill memory with a particular value. 
+**fill memory with a particular value.
 */
 
 void	ft_bzero(void *s, size_t n)
