@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/22 22:16:27 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 18:17:00 by shat             ###   ########.fr       */
+/*   Created: 2019/09/04 17:26:41 by shat              #+#    #+#             */
+/*   Updated: 2019/09/04 17:28:25 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**The isprint() function checks whether a 
-**character is a printable character  or not.
-**Those characters that occupies printing space 
-**are known as printable characters.
+**checks whether the passed character is uppercase letter.
 */
 
-int	ft_isprint(int c)
+int		ft_isupper(int c)
 {
-	return (32 <= c && c <= 126);
+	return (c <= 'Z' && c >= 'A');
 }

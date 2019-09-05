@@ -6,11 +6,25 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 00:10:26 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 20:16:39 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 18:27:07 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**converts integer into null - terminated string
+**. It can convert negative number too.The third
+**parameter base specify the conversion base.
+**For example : - if base is 2, then it will
+**convert the integer into its binary compatitable
+**string or if base is 16, then it will create 
+**hexadecimal converted string from of integer
+**number.If base is 10 and value is negative, 
+**the resulting string is preceded with a minus
+**sign(-) . with any other base , value is always
+**considered unsigned.
+*/
 
 char	*ft_itoa(int nbr)
 {

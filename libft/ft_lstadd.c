@@ -6,11 +6,17 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/01 13:48:21 by shat              #+#    #+#             */
-/*   Updated: 2019/09/03 12:38:52 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 18:39:12 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**Adds the element new at the beginning of the list.
+**The address of a pointer to the first link of a list.
+**The link to add at the beginning of the list.
+*/
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {

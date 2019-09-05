@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 17:07:42 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 14:55:23 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/04 17:41:37 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,9 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
+int 				ft_islower(int c);
 int					ft_isspace(int c);
+int					ft_isupper(int c);
 int					ft_memcmp(const void *b1, const void *b2, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strequ(char const *s1, char const *s2);

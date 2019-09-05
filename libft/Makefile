@@ -6,7 +6,7 @@
 #    By: shat <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/02 20:01:21 by shat              #+#    #+#              #
-#    Updated: 2019/09/04 13:42:34 by shat             ###   ########.fr        #
+#    Updated: 2019/09/04 17:40:38 by shat             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRC = ft_atoi.c\
 	  ft_isascii.c\
 	  ft_isdigit.c\
 	  ft_isprint.c\
+	  ft_islower.c\
 	  ft_isspace.c\
 	  ft_itoa.c\
 	  ft_lstadd.c\
@@ -27,6 +28,7 @@ SRC = ft_atoi.c\
 	  ft_lstmap.c\
 	  ft_lstnew.c\
 	  ft_lstiter.c\
+	  ft_isupper.c\
 	  ft_memalloc.c\
 	  ft_memccpy.c\
 	  ft_memchr.c\

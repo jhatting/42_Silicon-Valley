@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/22 22:16:27 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 18:17:00 by shat             ###   ########.fr       */
+/*   Created: 2019/09/04 17:33:45 by shat              #+#    #+#             */
+/*   Updated: 2019/09/04 17:34:32 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**The isprint() function checks whether a 
-**character is a printable character  or not.
-**Those characters that occupies printing space 
-**are known as printable characters.
+** The islower() function tests for any lower-case letters.  The value of the
+** argument must be representable as an unsigned char or the value of EOF.
 */
 
-int	ft_isprint(int c)
+int ft_islower(int c)
 {
-	return (32 <= c && c <= 126);
+	return (c >= 97 && c <= 122);
 }
