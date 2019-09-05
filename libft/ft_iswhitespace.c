@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/22 22:50:43 by shat              #+#    #+#             */
-/*   Updated: 2019/09/05 13:35:18 by shat             ###   ########.fr       */
+/*   Created: 2019/09/05 15:04:15 by shat              #+#    #+#             */
+/*   Updated: 2019/09/05 15:07:57 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,15 @@
 **used to check if the argument contains any
 **white-space characters.
 **There are many types of whitespace characters
-**‘ ‘ -space
-**‘\t’ - horizontal tab
-**‘\n’- newline
-**‘\v’- vertical tab
-**‘\f’- Feed
-**‘\r’- Carriage return
+**‘ ‘ - space (isstrwhitespace)
+**‘\t’ - horizontal tab (isstrwhitespace)
+**‘\n’- newline (isstrwhitespace)
+**‘\v’- vertical tab (ft_isotherwhitespace)
+**‘\f’- Feed (ft_isotherwhitespace)
+**‘\r’- Carriage return (ft_isotherwhitespace)
 */
 
-int		ft_isspace(int c)
+int		ft_iswhitespace(char c)
 {
-	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || \
-		c == '\r')
-		return (1);
-	return (0);
+	return (ft_isstrwhitespace(c) || ft_isotherwhitespace(c));
 }

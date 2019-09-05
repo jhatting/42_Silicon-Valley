@@ -6,7 +6,7 @@
 #    By: shat <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/02 20:01:21 by shat              #+#    #+#              #
-#    Updated: 2019/09/04 17:40:38 by shat             ###   ########.fr        #
+#    Updated: 2019/09/05 15:12:09 by shat             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,10 +17,14 @@ SRC = ft_atoi.c\
 	  ft_isalnum.c\
 	  ft_isalpha.c\
 	  ft_isascii.c\
+	  ft_isblank.c\
 	  ft_isdigit.c\
 	  ft_isprint.c\
+	  ft_isotherwhitespace.c\
 	  ft_islower.c\
 	  ft_isspace.c\
+	  ft_isstrwhitespace.c\
+	  ft_iswhitespace.c\
 	  ft_itoa.c\
 	  ft_lstadd.c\
 	  ft_lstdel.c\

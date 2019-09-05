@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_isblank.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/22 22:50:43 by shat              #+#    #+#             */
-/*   Updated: 2019/09/05 13:35:18 by shat             ###   ########.fr       */
+/*   Created: 2019/09/05 13:35:35 by shat              #+#    #+#             */
+/*   Updated: 2019/09/05 13:54:59 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**used to check if the argument contains any
-**white-space characters.
-**There are many types of whitespace characters
-**‘ ‘ -space
-**‘\t’ - horizontal tab
-**‘\n’- newline
-**‘\v’- vertical tab
-**‘\f’- Feed
-**‘\r’- Carriage return
+**This code prints out the string character by character,
+**replacing any blank character by a newline.considers
+**blank characters the tab character (‘\t’) and the space
+**character (‘ ‘).
 */
 
-int		ft_isspace(int c)
+int	ft_isblank(int c)
 {
-	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || \
-		c == '\r')
-		return (1);
-	return (0);
+	return (c == '\t' || c == ' ');
 }
